@@ -27,7 +27,7 @@ module Nesta
 
     get '/css/:layout.css' do
       content_type 'text/css', :charset => 'utf-8'
-      cache scss(params[:layout].to_sym)
+      cache sass(params[:layout].to_sym)
     end
 
     helpers do
